@@ -26,14 +26,14 @@ model:
 data:
     root_dir: /network/scratch/a/alexander.tong/lingua/data/fineweb_edu_10bt_shuffled
     sources:
-        dclm_baseline_1.0: 1.0
+        fineweb_edu_10bt.chunk.00.jsonl
     batch_size: 32
     prefetch_size: 64
     seq_len: 2048
     n_views: 2
     load_async: true
     tokenizer:
-        name: bytes
+        name: sp
         path: /network/scratch/a/alexander.tong/lingua/tokenizer/original/tokenizer.model
 
 profiling:
