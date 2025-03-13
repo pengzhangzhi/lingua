@@ -26,7 +26,7 @@ model:
 data:
     root_dir: /network/scratch/a/alexander.tong/lingua/data/fineweb_edu_10bt_shuffled
     sources:
-        fineweb_edu_10bt.chunk.00.jsonl: 1.0
+        fineweb_edu_10bt: 1.0
     batch_size: 32
     prefetch_size: 64
     seq_len: 2048
