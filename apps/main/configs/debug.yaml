@@ -33,7 +33,7 @@ data:
     n_views: 2
     load_async: true
     tokenizer:
-        name: sp
+        name: bytes
         path: /network/scratch/a/alexander.tong/lingua/tokenizer/original/tokenizer.model
 
 profiling:
