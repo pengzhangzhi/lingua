@@ -1,10 +1,9 @@
-# Template config, need to change dump_dir, data.root_dir and data.tokenizer.path
-
-# dump_dir: !!CHANGETHIS!!
+dump_dir: /network/scratch/a/alexander.tong/lingua/dump/debug
 name: "debug"
 steps: 1000
 probe_freq: 100
 seed: 777
+
 optim:
     lr: 3e-4
     warmup: 2000
@@ -25,7 +24,7 @@ model:
     n_heads: 8
 
 data:
-    root_dir: data/shuffled
+    root_dir: /network/scratch/a/alexander.tong/lingua/data/fineweb_edu_10bt_shuffled
     sources:
         dclm_baseline_1.0: 1.0
     batch_size: 32
@@ -35,6 +34,7 @@ data:
     load_async: true
     tokenizer:
         name: bytes
+        path: /network/scratch/a/alexander.tong/lingua/tokenizer/original/tokenizer.model
 
 profiling:
     run: true
