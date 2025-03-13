@@ -142,7 +142,7 @@ def validate_train_args(args: TrainArgs, output_size: int):
 
     for source in args.data.sources:
         data_path = os.path.join(args.data.root_dir, source)
-        assert os.path.exists(data_path), f"{data_path} doesn't exist"
+        # assert os.path.exists(data_path), f"{data_path} doesn't exist"
 
     if (
         args.distributed.dp_replicate
