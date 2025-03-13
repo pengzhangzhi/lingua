@@ -470,7 +470,7 @@ def find_and_sanitize_chunks(dataset_path: str, world_size: int, file_pattern: s
     print(f"Finding and sanitizing chunks in {dataset_path} with pattern {file_pattern}")
     dataset_chunks = [str(p) for p in Path(dataset_path).glob(file_pattern)]
     n_chunks = len(dataset_chunks)
-
+    print(f"Found {n_chunks} chunks: \n {dataset_chunks}")
     if n_chunks > world_size:
         n_discard = n_chunks - world_size
         dataset_chunks = dataset_chunks[:world_size]
