@@ -467,6 +467,7 @@ def batch_and_shuffle_prefetched_sequences(
 
 
 def find_and_sanitize_chunks(dataset_path: str, world_size: int, file_pattern: str = TRAIN_DATA_FILE_PATTERN):
+    print(f"Finding and sanitizing chunks in {dataset_path} with pattern {file_pattern}")
     dataset_chunks = [str(p) for p in Path(dataset_path).glob(file_pattern)]
     n_chunks = len(dataset_chunks)
 
